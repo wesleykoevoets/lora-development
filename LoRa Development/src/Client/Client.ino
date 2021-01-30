@@ -38,7 +38,7 @@ void loop()
 {
   Serial.println("Sending to rf95_server");
   // Send a message to rf95_server
-  uint8_t data[] = "Hello World!";
+  uint8_t data[] = "27.5";
   rf95.send(data, sizeof(data));
 
   rf95.waitPacketSent();
